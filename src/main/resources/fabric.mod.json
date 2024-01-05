@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "relaymod",
+	"version": "${version}",
+	"name": "relaymod",
+	"description": "This is my interpretation of Kenadian's Ender Relay concept",
+	"authors": [
+		"Xilande"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/relaymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.xilande.relaymod.RelayMod"
+		],
+		"client": [
+			"net.xilande.relaymod.RelayModClient"
+		],
+		"fabric-datagen": [
+			"net.xilande.relaymod.RelayModDataGenerator"
+		]
+	},
+	"mixins": [
+		"relaymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
